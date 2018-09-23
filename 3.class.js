@@ -47,7 +47,7 @@
 
 // 3.只继承公有属性
 // Child.prototype.__proto__ = Parent.prototype; //实现了继承公有的方法
-// Object.setPrototypeOf(Child.prototype, Parent.prototype);
+// Object.setPrototypeOf(Child.prototype, Parent.prototype); // es6
 // let c = new Child();
 // c.eat()
 
@@ -67,6 +67,6 @@ function Child() {
 //   Fn.prototype.constructor = Child
 //   return new Fn()
 // }
-// Child.prototype = Object.create(Parent.prototype,{constructor:{value:Child}});
+// Child.prototype = Object.create(Parent.prototype,{constructor:{value:Child}}); // es5
 // let c = new Child();
 // console.log(c.constructor);
